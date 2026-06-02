@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Bookings - Voyage Elite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#eceeef",
+                      "on-primary": "#ffffff",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-secondary": "#ffffff",
+                      "on-surface": "#191c1d",
+                      "on-secondary-container": "#004966",
+                      "on-tertiary-fixed-variant": "#005237",
+                      "surface-bright": "#f8fafb",
+                      "primary": "#001723",
+                      "on-secondary-fixed": "#001e2d",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#d8dadb",
+                      "on-surface-variant": "#42484c",
+                      "background": "#f8fafb",
+                      "vibrant-aqua": "#00AFEF",
+                      "ink-black": "#000000",
+                      "tropical-teal": "#34E0A1",
+                      "tertiary": "#00190e",
+                      "on-primary-container": "#7195ac",
+                      "primary-container": "#002d40",
+                      "on-tertiary-fixed": "#002114",
+                      "on-primary-fixed-variant": "#264b5f",
+                      "primary-fixed": "#c4e7ff",
+                      "outline-variant": "#c2c7cc",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed-dim": "#a7cbe4",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#5cfdbc",
+                      "secondary-container": "#2cbcfd",
+                      "inverse-primary": "#a7cbe4",
+                      "surface-container-low": "#f2f4f5",
+                      "surface-white": "#FFFFFF",
+                      "surface-variant": "#e1e3e4",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#f8fafb",
+                      "inverse-on-surface": "#eff1f2",
+                      "on-tertiary-container": "#00a472",
+                      "error-container": "#ffdad6",
+                      "outline": "#72787d",
+                      "secondary-fixed": "#c5e7ff",
+                      "surface-container-high": "#e6e8e9",
+                      "tertiary-container": "#00301f",
+                      "surface-tint": "#3f6378",
+                      "secondary": "#00658c",
+                      "sunset-accent": "#FFC56F",
+                      "on-primary-fixed": "#001e2c",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#004c6a",
+                      "inverse-surface": "#2e3132",
+                      "tertiary-fixed-dim": "#34e0a1",
+                      "secondary-fixed-dim": "#80cfff",
+                      "on-background": "#191c1d",
+                      "deep-navy": "#002D40"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xs": "0.25rem",
+                      "sm": "0.5rem",
+                      "xl": "2.5rem",
+                      "margin-desktop": "5rem",
+                      "gutter": "1rem",
+                      "max-width": "1280px",
+                      "margin-mobile": "1rem",
+                      "lg": "1.5rem",
+                      "md": "1rem"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Plus Jakarta Sans"],
+                      "headline-lg-mobile": ["Plus Jakarta Sans"],
+                      "headline-sm": ["Plus Jakarta Sans"],
+                      "label-caps": ["Plus Jakarta Sans"],
+                      "body-sm": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "label-bold": ["Plus Jakarta Sans"],
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                      "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "label-bold": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .glass-overlay {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .card-hover:hover .card-image {
+            transform: scale(1.05);
+        }
+        .booking-card {
+            transition: all 0.3s ease;
+        }
+        .booking-card:hover {
+            box-shadow: 0px 4px 20px rgba(0, 45, 64, 0.08);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface-white dark:bg-deep-navy w-full top-0 sticky z-50 border-b border-surface-variant dark:border-outline">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary">
+                Voyage Elite
+            </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-vibrant-aqua transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-vibrant-aqua transition-colors duration-200" href="#">Destinations</a>
+<a class="text-primary dark:text-vibrant-aqua border-b-2 border-vibrant-aqua pb-1 font-label-bold hover:text-vibrant-aqua transition-colors duration-200" href="#">Bookings</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-vibrant-aqua transition-colors duration-200" href="#">About</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-vibrant-aqua transition-colors" data-icon="search">search</span>
+<button class="bg-primary text-on-primary font-label-bold px-6 py-2 rounded-full hover:bg-vibrant-aqua transition-colors duration-200">
+                    Plan My Trip
+                </button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow px-margin-desktop py-xl max-w-max-width mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Left Column: Bookings Area (8 columns) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<header>
+<h1 class="font-headline-lg text-headline-lg text-primary mb-2">My Bookings</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Review and manage your upcoming adventures and past journeys.</p>
+</header>
+<!-- Filters -->
+<div class="flex border-b border-surface-variant mb-4">
+<button class="px-4 py-2 font-label-bold text-primary border-b-2 border-vibrant-aqua">Upcoming (2)</button>
+<button class="px-4 py-2 font-body-md text-on-surface-variant hover:text-vibrant-aqua transition-colors">Completed</button>
+<button class="px-4 py-2 font-body-md text-on-surface-variant hover:text-vibrant-aqua transition-colors">Cancelled</button>
+</div>
+<!-- Booking Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="booking-card bg-surface-white rounded-xl border border-surface-variant overflow-hidden flex flex-col card-hover">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img alt="Scenic view of Santorini" class="card-image w-full h-full object-cover transition-transform duration-500" data-alt="A breathtaking view of the iconic white-washed buildings and blue domes of Santorini, Greece, set against a brilliant azure Mediterranean sea. The scene is bathed in warm, golden hour sunlight, highlighting the intricate architecture and creating soft, inviting shadows. The overall aesthetic is aspirational, high-end travel photography, emphasizing luxury and serenity, aligning perfectly with a premium travel agency's light-mode visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBSGiUHFO0_z3EaTh9VU5ujCCw90zAK5tlZfakW8-fbaU9OenZqhbcazi0JEsnpu_IwCdeahSu28ZmsX26Vt0c_hvafy3j8UtEMo_CnQPG6IAYWoF1hyHjFbaj-rV9nni6gXOD9qEzN3A2lNKIGOfk4sFIEuWSJjYTL5A8UkZGgevOECVjG4ri80Gtm2cSAGZFoKbLwTjOlG4aIdlL93ZOya9Sando8cJVaLe2Yetmt9oo9VgR0zI3stgr1hRAA5XB1X2Fb1Yh1J0"/>
+<div class="absolute top-4 left-4 bg-surface-white/90 glass-overlay px-3 py-1 rounded-full flex items-center space-x-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tropical-teal"></span>
+<span class="font-label-caps text-label-caps text-primary">Confirmed</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Santorini Escape</h3>
+<span class="material-symbols-outlined text-vibrant-aqua" data-icon="flight">flight</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 flex items-center space-x-2">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_month">calendar_month</span>
+<span>Oct 15 - Oct 22, 2024</span>
+</p>
+<div class="mt-auto pt-4 border-t border-surface-variant flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="group">group</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 Guests</span>
+</div>
+<button class="font-label-bold text-label-bold text-vibrant-aqua hover:text-primary transition-colors">
+                                View Details
+                            </button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="booking-card bg-surface-white rounded-xl border border-surface-variant overflow-hidden flex flex-col card-hover">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img alt="Kyoto bamboo forest" class="card-image w-full h-full object-cover transition-transform duration-500" data-alt="A serene pathway meandering through the towering green stalks of the Arashiyama Bamboo Grove in Kyoto, Japan. Dappled sunlight filters through the dense canopy, creating a tranquil and almost mystical atmosphere. The image feels lush, immersive, and premium, capturing the essence of an exclusive cultural excursion suited for a high-end travel platform's bright and modern design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA86rNJ_5OGZ_0bjPCTdqx7ky-JemSZEWigao1p8YbiP-rTefSu4ZB56x5LPwMY_lMBwKb8gXS6DSVwUi_7568t42jCmDtjPkGpFLB-fM4-fqSP5l2Nbx_m8_zcWqywvRd72XsGEVv6B15GHa76RR5oESTZacYXVIlVVnnCq4cWRmUp4b-95Chl2SHD-MpDWoPDVlaPg7anjG0TS_2JcrdtBzzb0MP9soFTJT9Lt-yUkfUptJ1jssHSDmi0GWyMjaT7fjtN_OdKyc"/>
+<div class="absolute top-4 left-4 bg-surface-white/90 glass-overlay px-3 py-1 rounded-full flex items-center space-x-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-sunset-accent"></span>
+<span class="font-label-caps text-label-caps text-primary">Processing</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Kyoto Cultural Tour</h3>
+<span class="material-symbols-outlined text-vibrant-aqua" data-icon="explore">explore</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 flex items-center space-x-2">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_month">calendar_month</span>
+<span>Nov 05 - Nov 14, 2024</span>
+</p>
+<div class="mt-auto pt-4 border-t border-surface-variant flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="group">group</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 Guest</span>
+</div>
+<button class="font-label-bold text-label-bold text-vibrant-aqua hover:text-primary transition-colors">
+                                Manage
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sidebar (4 columns) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Loyalty Widget -->
+<div class="bg-primary text-on-primary rounded-xl p-6 shadow-lg relative overflow-hidden">
+<div class="absolute -right-10 -top-10 opacity-10">
+<span class="material-symbols-outlined text-9xl" data-icon="star" data-weight="fill">star</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-sm text-headline-sm mb-1 text-primary-fixed">Voyage Elite Rewards</h3>
+<div class="text-surface-variant font-body-sm mb-4">Platinum Member</div>
+<div class="flex items-baseline space-x-2 mb-6">
+<span class="font-display-lg text-display-lg">42,500</span>
+<span class="font-label-bold text-label-bold text-tropical-teal">Pts</span>
+</div>
+<div class="bg-surface-white/10 rounded-lg p-4 mb-4">
+<div class="flex justify-between text-sm mb-2">
+<span class="font-body-sm">Next Tier: Diamond</span>
+<span class="font-label-bold">7,500 pts to go</span>
+</div>
+<div class="w-full bg-primary-container rounded-full h-2">
+<div class="bg-vibrant-aqua h-2 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<button class="w-full py-3 bg-vibrant-aqua text-on-primary font-label-bold rounded-lg hover:bg-tropical-teal transition-colors duration-200">
+                        Redeem Points
+                    </button>
+</div>
+</div>
+<!-- Travel Credit Widget -->
+<div class="bg-surface-white rounded-xl border border-surface-variant p-6">
+<div class="flex items-center space-x-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Travel Credit</h3>
+</div>
+<div class="font-display-lg text-display-lg text-primary mb-2">$850.00</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Expires Dec 31, 2024</p>
+<button class="text-vibrant-aqua font-label-bold hover:text-primary transition-colors flex items-center space-x-1">
+<span>View Credit History</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-ink-black w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-xl max-w-max-width mx-auto">
+<div class="font-headline-sm text-headline-sm text-on-primary mb-4 md:mb-0">
+                Voyage Elite
+            </div>
+<div class="flex space-x-6 mb-4 md:mb-0">
+<a class="text-on-primary-container dark:text-surface-variant font-body-sm text-body-sm hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-on-primary-container dark:text-surface-variant font-body-sm text-body-sm hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-on-primary-container dark:text-surface-variant font-body-sm text-body-sm hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="text-on-primary-container dark:text-surface-variant font-body-sm text-body-sm hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">FAQ</a>
+</div>
+<div class="text-on-primary dark:text-on-primary font-body-sm text-body-sm opacity-80">
+                © 2024 Voyage Elite. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Santorini Destination - Voyage Elite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#002d40",
+                        "on-secondary-fixed": "#001e2d",
+                        "inverse-primary": "#a7cbe4",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#7195ac",
+                        "surface-white": "#FFFFFF",
+                        "vibrant-aqua": "#00AFEF",
+                        "outline-variant": "#c2c7cc",
+                        "surface-bright": "#f8fafb",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f8fafb",
+                        "on-tertiary-container": "#00a472",
+                        "outline": "#72787d",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#42484c",
+                        "inverse-on-surface": "#eff1f2",
+                        "on-surface": "#191c1d",
+                        "on-secondary-fixed-variant": "#004c6a",
+                        "surface-tint": "#3f6378",
+                        "primary": "#001723",
+                        "on-secondary-container": "#004966",
+                        "background": "#f8fafb",
+                        "secondary-container": "#2cbcfd",
+                        "surface-container-low": "#f2f4f5",
+                        "primary-fixed": "#c4e7ff",
+                        "primary-fixed-dim": "#a7cbe4",
+                        "surface-dim": "#d8dadb",
+                        "on-primary-fixed": "#001e2c",
+                        "tertiary-container": "#00301f",
+                        "tertiary": "#00190e",
+                        "on-error-container": "#93000a",
+                        "secondary": "#00658c",
+                        "on-background": "#191c1d",
+                        "ink-black": "#000000",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-fixed-variant": "#005237",
+                        "surface-container-high": "#e6e8e9",
+                        "tertiary-fixed": "#5cfdbc",
+                        "surface-variant": "#e1e3e4",
+                        "inverse-surface": "#2e3132",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#264b5f",
+                        "deep-navy": "#002D40",
+                        "tertiary-fixed-dim": "#34e0a1",
+                        "surface-container": "#eceeef",
+                        "secondary-fixed-dim": "#80cfff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#c5e7ff",
+                        "on-primary": "#ffffff",
+                        "sunset-accent": "#FFC56F",
+                        "on-secondary": "#ffffff",
+                        "tropical-teal": "#34E0A1",
+                        "on-tertiary-fixed": "#002114"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "1rem",
+                        "margin-mobile": "1rem",
+                        "margin-desktop": "5rem",
+                        "xs": "0.25rem",
+                        "md": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2.5rem",
+                        "max-width": "1280px",
+                        "sm": "0.5rem"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "body-sm": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "label-bold": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.08em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-bold": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface-white/90 dark:bg-deep-navy/90 backdrop-blur-md w-full sticky top-0 z-50 border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="max-w-max-width mx-auto flex justify-between items-center px-margin-desktop h-20">
+<div class="font-display-lg text-headline-md font-bold text-deep-navy dark:text-vibrant-aqua cursor-pointer hover:text-vibrant-aqua transition-colors duration-200">Voyage Elite</div>
+<div class="hidden md:flex items-center space-x-lg font-label-bold text-label-bold uppercase">
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-vibrant-aqua transition-all duration-200" href="#">Home</a>
+<a class="text-vibrant-aqua border-b-2 border-vibrant-aqua pb-1 hover:text-vibrant-aqua transition-all duration-200" href="#">Destinations</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-vibrant-aqua transition-all duration-200" href="#">Bookings</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-vibrant-aqua transition-all duration-200" href="#">About</a>
+</div>
+<div class="flex items-center space-x-md">
+<button class="hidden md:flex bg-deep-navy text-surface-white px-xl py-sm rounded-full font-label-bold text-label-bold uppercase hover:bg-vibrant-aqua hover:scale-95 transition-all duration-200">
+                    Plan My Trip
+                </button>
+<button class="md:hidden text-deep-navy p-sm hover:text-vibrant-aqua transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="flex-grow flex flex-col">
+<!-- Hero Section -->
+<section class="relative h-[716px] w-full bg-surface-container-highest overflow-hidden">
+<img alt="Hero Image" class="w-full h-full object-cover absolute inset-0 z-0" data-alt="A sweeping, breathtaking panoramic view of Santorini, Greece during golden hour. The iconic whitewashed buildings with bright blue domed roofs cascade down the rugged caldera cliffs. The deep azure Aegean Sea stretches to the horizon, reflecting the warm, golden light of the setting sun. The scene embodies a high-end, aspirational travel aesthetic with crisp details, vivid colors, and a serene, luxurious mood. The sky is a clear gradient of orange to soft blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACZxpHJqvzYWxy0ZtcMe6KF1qUQbtD1d6YhqUT0cyo65PSqM_WTKDClfPGVeRNfNVW8JMhwBSxKSJQP1V-4DifwVYAyFNQKNM_7gIVVu4J8fJWDUVuRgtGodc30Qibj1pGcFFhjpylI4Bi-SfzS1dOAyXXhftW3HEOuyWGHinlST-cSma-A-c5zCXe-zsLIuOgBaGe70ZPpGx9b5TkXQVdq5rwtmFy7HTQDY_mkcnVuUdDOoxbxtolqKHRYnch2Ct1PCUsc923tiw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-transparent to-transparent z-10"></div>
+<div class="relative z-20 h-full max-w-max-width mx-auto px-margin-desktop flex flex-col justify-end pb-xl">
+<div class="glass-panel p-lg rounded-xl inline-block max-w-2xl mb-lg animate-fade-in-up">
+<div class="flex items-center space-x-sm mb-xs text-secondary font-label-bold text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>Cyclades, Greece</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-deep-navy mb-sm leading-tight">Santorini Escape</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant line-clamp-2">Experience the epitome of Mediterranean luxury with breathtaking caldera views, private infinity pools, and world-class culinary journeys.</p>
+</div>
+</div>
+</section>
+<!-- Main Content Split -->
+<section class="max-w-max-width mx-auto px-margin-desktop py-xl w-full grid grid-cols-1 lg:grid-cols-12 gap-xl relative">
+<!-- Left Column: Details -->
+<div class="lg:col-span-8 space-y-xl">
+<!-- Overview -->
+<div class="space-y-md bg-surface-white p-lg rounded-xl border border-outline-variant/30">
+<h2 class="font-headline-lg text-headline-lg text-deep-navy">The Experience</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Perched on the rim of an active volcano, Santorini is a masterclass in dramatic landscapes and refined living. This exclusive itinerary offers unparalleled access to hidden coves, private wine tastings in historic vineyards, and evenings spent watching the legendary Oia sunset from your secluded terrace.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Every detail is curated to provide a seamless blend of traditional Greek charm and modern luxury, ensuring an unforgettable journey into the heart of the Aegean.
+                    </p>
+</div>
+<!-- Gallery Masonry -->
+<div class="space-y-md">
+<h3 class="font-headline-md text-headline-md text-deep-navy flex items-center gap-sm">
+<span class="material-symbols-outlined text-vibrant-aqua">photo_library</span> Visual Journey
+                    </h3>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-md">
+<div class="col-span-2 row-span-2 h-64 md:h-96 rounded-xl overflow-hidden relative group">
+<img alt="Gallery Image 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A luxurious private terrace in Santorini with a pristine infinity pool overlooking the deep blue caldera. White lounge chairs sit under a chic pergola. The mood is serene, wealthy, and aspirational. Warm midday sunlight highlights the bright white architecture against the vibrant blue sea. Professional architectural travel photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj_RaRJPYE_P_N5Rc7q-pimhP-RNaU_MbPjLS84Onn6LOtLrVFQlu9dKQJRmEG6tK4RuZr_CN3Xo03n2CrOoN9odalOsh-33hrrXAKj0jMgCXbFe8Oss5Zy4IlLvRh061wE9YU5dwiOD5VPxrIBOVJt_vxwpUCnOp6ES04fvJPuNH9WrqWilfRWPT4OX0y_VeQCg0hzox5TpI5qGAJic853-WFUJjiFHgTPjdtwEkcT8q9rembZnj8IhVH_5LDNKpK3LOd_ZJtZjY"/>
+<div class="absolute inset-0 bg-deep-navy/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="h-32 md:h-48 rounded-xl overflow-hidden relative group">
+<img alt="Gallery Image 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of gourmet Greek cuisine, a beautifully plated fresh seafood dish with local vegetables and olive oil, set on a rustic white table overlooking the ocean. Elegant, high-end culinary photography, bright natural lighting, emphasizing luxury dining." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqAflgmedhs_8dhGtd7eK0sFcMYRWilALWnV5gfcs-LBc62OrKK7U4jtDcUh_rlBAy3Au5jEHJJIUMEPZE-eY0lS75cUrKkUXpBHVt37pkbd8fHj_YExDFK5jrbyMOlANk9IRs58SWFtMj5xrEySmbBU7QMJBrxPBg20E5oJXubAfd7UYDHn4105OykEgG-x5S8WuesJNsnbv5jza5a7YTrl31a4sStEo-9WOrR2NW1o-p5oCM5WIxMKX0gl8ifT-1YT3yvbgr2pc"/>
+<div class="absolute inset-0 bg-deep-navy/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="h-32 md:h-48 rounded-xl overflow-hidden relative group">
+<img alt="Gallery Image 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A romantic, secluded pebble beach in Santorini with crystal clear turquoise water gently lapping the shore. High volcanic cliffs in the background. Tranquil, exclusive, and peaceful atmosphere. Bright, sunny day." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZbAuy5bleXLbdAE7GGziorxPIQoyP8hQe2Cwo4UiX-x70jpZ804ixHlS9Mx1GzcLYPgcS7_zIRLh8ymBjO7gVGXN5NtvfTDtLwriP5rOvEIvJ6UfCnbauW_-f4c9fWWPYXbyN2gcsux-fDuauD9_UWPtzuEh61X8TbbEBzidyfL_wHKl18PaEbKcax7sMzIrsfF-uHom3ZyT8ZlNB55Zkji7OWXOzp2pYmqM2QozLldeVr6XQhsjWwZQheM7hD15Es9BeKxiiRks"/>
+<div class="absolute inset-0 bg-deep-navy/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Booking Widget -->
+<div class="lg:col-span-4">
+<div class="sticky top-[100px] bg-surface-white border border-outline-variant/30 rounded-xl shadow-lg p-lg flex flex-col space-y-lg">
+<div class="flex justify-between items-end border-b border-outline-variant/20 pb-md">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mb-xs">Starting from</span>
+<span class="font-headline-lg text-headline-lg text-deep-navy font-bold">$4,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ person</span>
+</div>
+<div class="flex items-center space-x-xs text-tropical-teal font-label-bold text-label-caps">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (128 Reviews)</span>
+</div>
+</div>
+<div class="space-y-sm">
+<div class="border border-outline-variant/40 rounded-lg p-sm flex items-center justify-between cursor-pointer hover:border-vibrant-aqua transition-colors">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Check-in</span>
+<span class="font-body-sm text-body-sm text-deep-navy">Add dates</span>
+</div>
+<span class="material-symbols-outlined text-outline">calendar_today</span>
+</div>
+<div class="border border-outline-variant/40 rounded-lg p-sm flex items-center justify-between cursor-pointer hover:border-vibrant-aqua transition-colors">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Guests</span>
+<span class="font-body-sm text-body-sm text-deep-navy">2 Adults</span>
+</div>
+<span class="material-symbols-outlined text-outline">group</span>
+</div>
+</div>
+<button class="w-full bg-vibrant-aqua text-surface-white py-md rounded-lg font-label-bold text-label-bold uppercase tracking-wider hover:bg-deep-navy transition-colors duration-300 shadow-md">
+                        Book Now
+                    </button>
+<p class="font-body-sm text-body-sm text-center text-outline mt-sm">You won't be charged yet.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-ink-black text-on-primary dark:text-on-primary-container font-body-sm text-body-sm w-full pt-xl pb-lg border-t border-on-primary-fixed-variant/20 mt-auto">
+<div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-lg">
+<div class="flex flex-col space-y-md">
+<span class="font-headline-sm text-headline-sm text-vibrant-aqua font-bold">Voyage Elite</span>
+<p class="text-on-primary-container max-w-xs">Premium global exploration for the discerning traveler. Curated experiences, unforgettable memories.</p>
+</div>
+<div class="flex flex-col space-y-sm">
+<h4 class="font-label-bold text-label-caps text-surface-white uppercase tracking-wider mb-sm">Legal</h4>
+<a class="text-on-primary-container hover:text-vibrant-aqua underline-offset-4 hover:underline transition-colors" href="#">Terms of Service</a>
+<a class="text-on-primary-container hover:text-vibrant-aqua underline-offset-4 hover:underline transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col space-y-sm">
+<h4 class="font-label-bold text-label-caps text-surface-white uppercase tracking-wider mb-sm">Company</h4>
+<a class="text-on-primary-container hover:text-vibrant-aqua underline-offset-4 hover:underline transition-colors" href="#">Sustainability</a>
+<a class="text-on-primary-container hover:text-vibrant-aqua underline-offset-4 hover:underline transition-colors" href="#">Careers</a>
+<a class="text-on-primary-container hover:text-vibrant-aqua underline-offset-4 hover:underline transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col space-y-sm md:items-end md:justify-end">
+<p class="text-on-primary-container text-left md:text-right">© 2024 Voyage Elite. All rights reserved. Premium Global Exploration.</p>
+</div>
+</div>
+</footer>
+</body></html>

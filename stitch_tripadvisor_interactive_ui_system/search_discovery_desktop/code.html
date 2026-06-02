@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Voyage Elite - Discover Crowd-Free Destinations</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#191c1d",
+                        "inverse-surface": "#2e3132",
+                        "on-primary-fixed-variant": "#264b5f",
+                        "surface-white": "#FFFFFF",
+                        "sunset-accent": "#FFC56F",
+                        "secondary-fixed-dim": "#80cfff",
+                        "inverse-primary": "#a7cbe4",
+                        "on-secondary-fixed": "#001e2d",
+                        "surface-tint": "#3f6378",
+                        "tertiary-fixed": "#5cfdbc",
+                        "on-surface-variant": "#42484c",
+                        "vibrant-aqua": "#00AFEF",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-error": "#ffffff",
+                        "primary-container": "#002d40",
+                        "on-tertiary-fixed-variant": "#005237",
+                        "on-background": "#191c1d",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "outline-variant": "#c2c7cc",
+                        "on-tertiary-container": "#00a472",
+                        "tertiary": "#00190e",
+                        "secondary": "#00658c",
+                        "surface-container": "#eceeef",
+                        "tertiary-fixed-dim": "#34e0a1",
+                        "surface-dim": "#d8dadb",
+                        "ink-black": "#000000",
+                        "on-secondary-fixed-variant": "#004c6a",
+                        "on-primary-fixed": "#001e2c",
+                        "on-primary-container": "#7195ac",
+                        "primary": "#001723",
+                        "surface-container-high": "#e6e8e9",
+                        "deep-navy": "#002D40",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#c5e7ff",
+                        "background": "#f8fafb",
+                        "inverse-on-surface": "#eff1f2",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f8fafb",
+                        "tertiary-container": "#00301f",
+                        "on-tertiary-fixed": "#002114",
+                        "outline": "#72787d",
+                        "surface-bright": "#f8fafb",
+                        "primary-fixed-dim": "#a7cbe4",
+                        "secondary-container": "#2cbcfd",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#c4e7ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f2f4f5",
+                        "on-secondary-container": "#004966",
+                        "tropical-teal": "#34E0A1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "1.5rem",
+                        "sm": "0.5rem",
+                        "margin-mobile": "1rem",
+                        "xs": "0.25rem",
+                        "max-width": "1280px",
+                        "md": "1rem",
+                        "gutter": "1rem",
+                        "margin-desktop": "5rem",
+                        "xl": "2.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "label-bold": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.08em", "fontWeight": "600" }],
+                        "label-bold": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-overlay {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glass-overlay-dark {
+            background: rgba(0, 45, 64, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hover-card-image {
+            transition: transform 0.5s ease;
+        }
+        .destination-card:hover .hover-card-image {
+            transform: scale(1.05);
+        }
+        .destination-card:hover .card-action {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .card-action {
+            transition: all 0.3s ease;
+            transform: translateY(10px);
+            opacity: 0;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-white dark:bg-deep-navy w-full top-0 sticky border-b border-surface-variant dark:border-outline z-50 transition-all duration-300">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="flex items-center gap-xl">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary" href="#">
+                    Voyage Elite
+                </a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-vibrant-aqua transition-colors duration-200" href="#">Home</a>
+<a class="text-primary dark:text-vibrant-aqua border-b-2 border-vibrant-aqua pb-1 font-label-bold hover:text-vibrant-aqua transition-colors duration-200 active:scale-95 transition-transform" href="#">Destinations</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-vibrant-aqua transition-colors duration-200" href="#">Bookings</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-vibrant-aqua transition-colors duration-200" href="#">About</a>
+</nav>
+</div>
+<!-- Trailing Action -->
+<div class="flex items-center gap-md">
+<button class="hidden md:block bg-deep-navy text-on-primary px-lg py-sm rounded-full font-label-bold hover:bg-vibrant-aqua transition-colors duration-200">
+                    Plan My Trip
+                </button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col">
+<!-- Hero Search Section -->
+<section class="relative w-full h-[614px] min-h-[500px] flex items-center justify-center bg-surface-container overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Hero Background" class="w-full h-full object-cover" data-alt="A breathtaking, expansive landscape shot of a serene, misty mountain valley at dawn. The scene is quiet and isolated, featuring lush green pines emerging from soft morning fog, with jagged, majestic peaks in the background. The lighting is soft and cinematic, casting a cool, calming blue and subtle golden light. The mood is tranquil, aspirational, and deeply peaceful, perfectly aligning with a high-end luxury travel aesthetic focused on off-the-beaten-path, crowd-free destinations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu64zo42UQSMwMp540qu40KesCU9ll5Yco1ipTrTkXLPg-dXcNV1AP7m0TcCGk4SSoakMUofD8aha_Hu28Z3ieN0vCtnhgtYMweAQw73Smd4_VIvBYrxOYHVlY--yDeSrzFwvRVdX0aTJWTLcGMF89TRS75kDbqnTdO5rvyLG39CKG-VuZK6qtFRWZ_lqmisO25y5i6ycfr5oblczwlybb2bDkO3231syMR7KD-nI2NsgyIqe-j2TMsVjQikjKrdIXO4ZsejCscsw"/>
+<div class="absolute inset-0 bg-primary/30 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 w-full max-w-[800px] px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center mt-xl">
+<h1 class="font-display-lg text-display-lg text-surface-white mb-md drop-shadow-lg">
+                    Discover the Undiscovered
+                </h1>
+<p class="font-body-lg text-body-lg text-surface-container-low mb-xl max-w-2xl drop-shadow-md">
+                    Escape the ordinary and find your sanctuary in our curated selection of pristine, crowd-free destinations.
+                </p>
+<!-- Prominent Search Bar (Mobile-First Pill Design) -->
+<div class="w-full bg-surface-white rounded-full shadow-[0px_8px_30px_rgba(0,45,64,0.15)] border border-surface-variant p-sm flex flex-col md:flex-row items-center gap-sm">
+<div class="flex-1 w-full md:w-auto flex items-center px-md py-sm hover:bg-surface-container-lowest rounded-full cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-vibrant-aqua mr-sm" style="font-variation-settings: 'FILL' 0;">location_on</span>
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Where</span>
+<input class="bg-transparent border-none p-0 focus:ring-0 font-body-md text-body-md text-on-surface placeholder-outline w-full outline-none" placeholder="Search uncrowded gems..." type="text"/>
+</div>
+</div>
+<div class="hidden md:block w-[1px] h-8 bg-surface-variant"></div>
+<div class="flex-1 w-full md:w-auto flex items-center px-md py-sm hover:bg-surface-container-lowest rounded-full cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-vibrant-aqua mr-sm" style="font-variation-settings: 'FILL' 0;">calendar_month</span>
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps text-on-surface-variant">When</span>
+<span class="font-body-md text-body-md text-outline">Add dates</span>
+</div>
+</div>
+<div class="hidden md:block w-[1px] h-8 bg-surface-variant"></div>
+<!-- Crowd-Free Filter Toggle -->
+<div class="flex-1 w-full md:w-auto flex items-center px-md py-sm hover:bg-surface-container-lowest rounded-full cursor-pointer transition-colors group">
+<span class="material-symbols-outlined text-tropical-teal mr-sm" style="font-variation-settings: 'FILL' 1;">spa</span>
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Vibe</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Crowd-Free</span>
+</div>
+<div class="ml-auto w-10 h-5 bg-tropical-teal rounded-full relative shadow-inner">
+<div class="absolute right-1 top-0.5 w-4 h-4 bg-surface-white rounded-full shadow-sm"></div>
+</div>
+</div>
+<button class="w-full md:w-auto bg-vibrant-aqua text-on-primary rounded-full p-md flex items-center justify-center hover:bg-secondary transition-colors shadow-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Peaceful Alternatives (Bento Grid Layout) -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl max-w-max-width mx-auto w-full">
+<div class="mb-lg flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-xs">Peaceful Alternatives</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Trade the tourist traps for these serene lookalikes.</p>
+</div>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md md:h-[500px]">
+<!-- Main Featured Alternative -->
+<div class="md:col-span-2 destination-card relative rounded-xl overflow-hidden cursor-pointer group shadow-sm hover:shadow-[0px_4px_20px_rgba(0,45,64,0.08)] border border-surface-variant transition-shadow">
+<img alt="Instead of Santorini" class="absolute inset-0 w-full h-full object-cover hover-card-image" data-alt="A stunning, high-angle shot of a quiet coastal village with whitewashed houses and blue accents, overlooking a crystal-clear, calm turquoise sea. The architecture resembles Greek islands but feels distinctly remote and untouched. The sunlight is bright and natural, casting crisp shadows. The scene is devoid of large crowds, emphasizing a luxurious, peaceful, and exclusive travel experience in line with the Voyage Elite brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFBDqVItih-3H4zpMmNvvOcmZyI_OLc2od8u7m6AK0I6bwHVegjtw8nGXHW6BxyfgCvIr2bKYbW4BmWar8RJ7utfCMF2GXr11KRPhEVJAXkavIvJciGSy9TWp4fWC3AHjU9J1pfrrkh5z7VzfUCJpTRyQ98Cl-ni6ah0L__6KotWgB_NRcrrpm4BOlPWJUjDMCm_thJWRhsuoUTIJRgRIoQG3x8JbJeKRcXn4RmVwxkav_O-3HJMWH7bl6C3iC3WiDFB05dTVlEeE"/>
+<!-- Verified Low Crowd Badge -->
+<div class="absolute top-sm left-sm bg-surface-white/90 backdrop-blur-sm rounded-full px-sm py-xs flex items-center gap-xs shadow-sm border border-surface-variant z-10">
+<span class="material-symbols-outlined text-tropical-teal text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-caps text-label-caps text-primary">Verified Low Crowd</span>
+</div>
+<!-- Glass Panel Content -->
+<div class="absolute bottom-0 left-0 right-0 glass-overlay p-md border-t border-surface-variant/30 flex justify-between items-end">
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-xs">INSTEAD OF SANTORINI</p>
+<h3 class="font-headline-md text-headline-md text-primary">Folegandros, Greece</h3>
+<div class="flex items-center gap-xs mt-xs text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-bold text-label-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-xs">(120 Reviews)</span>
+</div>
+</div>
+<button class="card-action bg-deep-navy text-on-primary px-md py-sm rounded-full font-label-bold shadow-md">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Secondary Alternatives Vertical Stack -->
+<div class="grid grid-rows-2 gap-md h-[500px] md:h-auto">
+<!-- Item 1 -->
+<div class="destination-card relative rounded-xl overflow-hidden cursor-pointer group shadow-sm hover:shadow-[0px_4px_20px_rgba(0,45,64,0.08)] border border-surface-variant transition-shadow">
+<img alt="Instead of Paris" class="absolute inset-0 w-full h-full object-cover hover-card-image" data-alt="A charming, narrow cobblestone street in a historic European city, featuring elegant old-world architecture and warm, inviting cafes. The street is quiet and uncrowded, lit by soft, golden late-afternoon sunlight that creates long, romantic shadows. The aesthetic is sophisticated and serene, capturing the essence of classic European charm without the overwhelming tourist presence, fitting a high-end, curated travel narrative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI3GRqOpsmwkFk6H0Xp1OHy0ymeEXGwwsKw28MfFaTMTttAnDHqjmRrzD5muRQcsNKwt6oCOGEBELweMzMz2VEJjpJ6_mSyRhHWv1KBmxtjYHDGv8ZCPpJpkq06vamJNemP2b3R364wnW4s1cyxmBadwnpRIm979ChS0YNi7XP1V6fq-4RHWh78Z3a4Ob3h6Vy88a6BxjiUNRcZfJAKUkSDxcucAACSbLdS24CWKyYGcOUrKBY53jRRyDjQxZnyJD0678R-FY2_io"/>
+<div class="absolute bottom-0 left-0 right-0 glass-overlay p-md border-t border-surface-variant/30">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-xs">INSTEAD OF PARIS</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Lyon, France</h3>
+<button class="card-action bg-transparent border-2 border-vibrant-aqua text-primary px-sm py-xs rounded-full font-label-bold mt-sm w-full">
+                                Explore
+                            </button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="destination-card relative rounded-xl overflow-hidden cursor-pointer group shadow-sm hover:shadow-[0px_4px_20px_rgba(0,45,64,0.08)] border border-surface-variant transition-shadow">
+<img alt="Instead of Kyoto" class="absolute inset-0 w-full h-full object-cover hover-card-image" data-alt="A peaceful, traditional Japanese garden scene with a beautifully preserved wooden temple structure nestled among vibrant green moss and ancient trees. The environment is impeccably maintained and devoid of tourists, offering a sense of profound zen and exclusivity. The lighting is soft and diffused, highlighting the rich textures of the wood and flora. The mood is deeply tranquil and culturally rich, appealing to luxury travelers seeking authentic, quiet experiences." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2YQoKZDn0y7svMwmlHP3TZhys-rMHZKa-eD1EkyU2-kISxW8dqIpy69acJKOfHgpPzo6pEcJI2iHPsALR5_emzQWRLZogJ7bPno4jaQoUxmg_iGwIe3woHHYDThvXtbWYFav-pYG9wDZdDvEdfDsSHTxV2x1pNRx-gfrSZwA89MhDbmjzl_P6rVtSAojFgFb7mpqihvbx1mpOWohEBqqrb8PZFjZlVrNqXdB2AH6bNB4g6-Ij-5m6UmJdaGr6r8-ItUnBXH9ScXs"/>
+<div class="absolute top-sm right-sm bg-surface-white/90 backdrop-blur-sm rounded-full p-xs shadow-sm border border-surface-variant z-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tropical-teal text-[16px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 glass-overlay p-md border-t border-surface-variant/30">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-xs">INSTEAD OF KYOTO</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Kanazawa, Japan</h3>
+<button class="card-action bg-transparent border-2 border-vibrant-aqua text-primary px-sm py-xs rounded-full font-label-bold mt-sm w-full">
+                                Explore
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-ink-black w-full">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-xl max-w-max-width mx-auto">
+<div class="font-headline-sm text-headline-sm text-on-primary mb-md md:mb-0">
+                Voyage Elite
+            </div>
+<nav class="flex flex-wrap justify-center gap-md mb-md md:mb-0">
+<a class="font-body-sm text-body-sm text-on-primary-container dark:text-surface-variant hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-primary-container dark:text-surface-variant hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-primary-container dark:text-surface-variant hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="font-body-sm text-body-sm text-on-primary-container dark:text-surface-variant hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">FAQ</a>
+</nav>
+<div class="font-body-sm text-body-sm text-on-primary dark:text-on-primary opacity-80 hover:opacity-100">
+                © 2024 Voyage Elite. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

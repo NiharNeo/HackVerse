@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audio Guide: Kyoto Golden Pavilion - Voyage Elite</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#191c1d",
+                      "inverse-surface": "#2e3132",
+                      "on-primary-fixed-variant": "#264b5f",
+                      "surface-white": "#FFFFFF",
+                      "sunset-accent": "#FFC56F",
+                      "secondary-fixed-dim": "#80cfff",
+                      "inverse-primary": "#a7cbe4",
+                      "on-secondary-fixed": "#001e2d",
+                      "surface-tint": "#3f6378",
+                      "tertiary-fixed": "#5cfdbc",
+                      "on-surface-variant": "#42484c",
+                      "vibrant-aqua": "#00AFEF",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-error": "#ffffff",
+                      "primary-container": "#002d40",
+                      "on-tertiary-fixed-variant": "#005237",
+                      "on-background": "#191c1d",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#e1e3e4",
+                      "outline-variant": "#c2c7cc",
+                      "on-tertiary-container": "#00a472",
+                      "tertiary": "#00190e",
+                      "secondary": "#00658c",
+                      "surface-container": "#eceeef",
+                      "tertiary-fixed-dim": "#34e0a1",
+                      "surface-dim": "#d8dadb",
+                      "ink-black": "#000000",
+                      "on-secondary-fixed-variant": "#004c6a",
+                      "on-primary-fixed": "#001e2c",
+                      "on-primary-container": "#7195ac",
+                      "primary": "#001723",
+                      "surface-container-high": "#e6e8e9",
+                      "deep-navy": "#002D40",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#c5e7ff",
+                      "background": "#f8fafb",
+                      "inverse-on-surface": "#eff1f2",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "surface": "#f8fafb",
+                      "tertiary-container": "#00301f",
+                      "on-tertiary-fixed": "#002114",
+                      "outline": "#72787d",
+                      "surface-bright": "#f8fafb",
+                      "primary-fixed-dim": "#a7cbe4",
+                      "secondary-container": "#2cbcfd",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#c4e7ff",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-low": "#f2f4f5",
+                      "on-secondary-container": "#004966",
+                      "tropical-teal": "#34E0A1"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "lg": "1.5rem",
+                      "sm": "0.5rem",
+                      "margin-mobile": "1rem",
+                      "xs": "0.25rem",
+                      "max-width": "1280px",
+                      "md": "1rem",
+                      "gutter": "1rem",
+                      "margin-desktop": "5rem",
+                      "xl": "2.5rem"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Plus Jakarta Sans"],
+                      "body-md": ["Inter"],
+                      "headline-sm": ["Plus Jakarta Sans"],
+                      "label-caps": ["Plus Jakarta Sans"],
+                      "label-bold": ["Plus Jakarta Sans"],
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "headline-lg-mobile": ["Plus Jakarta Sans"],
+                      "body-sm": ["Inter"],
+                      "body-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                      "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                      "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.08em", "fontWeight": "600" }],
+                      "label-bold": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                      "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                      "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                      "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                      "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                      "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for chapter list */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #c2c7cc; /* outline-variant */
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-vibrant-aqua selection:text-surface-white flex flex-col min-h-screen">
+<!-- Shared Component: TopNavBar -->
+<!-- Active Tab: Destinations (Direct intent match for a destination page) -->
+<nav class="bg-surface-white w-full top-0 sticky z-50 border-b border-surface-variant">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-max-width mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 transition-transform duration-200 hover:scale-95" href="#">
+                Voyage Elite
+            </a>
+<!-- Navigation Links -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-body-md hover:text-vibrant-aqua transition-colors duration-200" href="#">Home</a>
+<!-- Active Link -->
+<a class="text-primary border-b-2 border-vibrant-aqua pb-1 font-label-bold transition-transform duration-200 hover:scale-95" href="#">Destinations</a>
+<a class="text-on-surface-variant font-body-md hover:text-vibrant-aqua transition-colors duration-200" href="#">Bookings</a>
+<a class="text-on-surface-variant font-body-md hover:text-vibrant-aqua transition-colors duration-200" href="#">About</a>
+</div>
+<!-- Trailing Action -->
+<button class="hidden md:flex bg-deep-navy text-on-primary px-6 py-3 rounded-full font-label-bold hover:bg-vibrant-aqua transition-colors duration-200 shadow-sm">
+                Plan My Trip
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pb-xl">
+<!-- Hero Section & Immersive Audio Player -->
+<section class="max-w-max-width mx-auto px-margin-desktop pt-lg pb-xl">
+<div class="relative w-full h-[560px] rounded-xl overflow-hidden bg-surface-container shadow-[0px_4px_20px_rgba(0,45,64,0.08)] group">
+<!-- Hero Image -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="A breathtaking, high-fidelity wide shot of the Golden Pavilion (Kinkaku-ji) in Kyoto, Japan, reflecting perfectly on the serene, rippling pond in the foreground. The scene is bathed in brilliant, soft morning sunlight, emphasizing the gleaming gold leaf architecture against lush, deep green pines. The aesthetic is highly polished and cinematic, fitting a premium modern travel platform's light-mode visual language. The atmosphere is tranquil, aspirational, and culturally rich." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPEoZkor3hwFp9pBNfIcFT2R8l4fVo3wwroR_VDv5kBmY-d_bPjZeZi2ABMlN7GUSxDwsfpqslnrpp5LWkyfMijrHRXFFLTLK25wmyaofw65uCXcNApf8nXsxY2cN7DRvGKxbTjtmrYXVGGpoqmb8ljRS_0aby-W32kbDSyk6tZazEc7RiChNOttfWgSXMrqPg4eqPOmQk60H9AaUwWVH6LEZxKme8DB8nBin7GEp7w1qEawua-bFQ-jSr3qnikf0lBZpHzxYGBjA')">
+</div>
+<!-- Subtle Top Gradient for text legibility if needed, keeping mostly clear for visual impact -->
+<div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-primary/30 to-transparent"></div>
+<!-- Top Badges -->
+<div class="absolute top-6 left-6 flex gap-3">
+<span class="bg-surface-white/80 backdrop-blur-md px-4 py-2 rounded-full font-label-caps text-label-caps text-primary uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">headphones</span>
+                        Immersive Audio Guide
+                    </span>
+<span class="bg-deep-navy/80 backdrop-blur-md px-4 py-2 rounded-full font-label-caps text-label-caps text-surface-white uppercase tracking-wider shadow-sm">
+                        Kyoto, Japan
+                    </span>
+</div>
+<!-- Glassmorphic Audio Player Overlay (Bottom anchored) -->
+<div class="absolute bottom-6 left-6 right-6">
+<div class="bg-surface-white/60 backdrop-blur-md border border-surface-white/40 rounded-xl p-6 shadow-lg flex flex-col md:flex-row items-center gap-8">
+<!-- Play Controls -->
+<div class="flex items-center gap-4">
+<button aria-label="Previous Chapter" class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-white text-primary hover:text-vibrant-aqua transition-colors duration-200 shadow-sm">
+<span class="material-symbols-outlined">skip_previous</span>
+</button>
+<button aria-label="Play/Pause" class="w-16 h-16 flex items-center justify-center rounded-full bg-vibrant-aqua text-surface-white hover:bg-deep-navy transition-colors duration-300 shadow-md" id="main-play-btn">
+<span class="material-symbols-outlined fill-icon text-3xl" id="play-icon">play_arrow</span>
+</button>
+<button aria-label="Next Chapter" class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-white text-primary hover:text-vibrant-aqua transition-colors duration-200 shadow-sm">
+<span class="material-symbols-outlined">skip_next</span>
+</button>
+</div>
+<!-- Track Info & Progress -->
+<div class="flex-grow w-full">
+<div class="flex justify-between items-end mb-2">
+<div>
+<h1 class="font-headline-sm text-headline-sm text-primary mb-1">1. The Gleaming Reflection: Origins of Kinkaku-ji</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">record_voice_over</span>
+                                        Narrated by Kenji Sato
+                                    </p>
+</div>
+<div class="font-label-bold text-label-bold text-primary font-variant-numeric: tabular-nums;">
+<span id="current-time">02:14</span> / <span>12:45</span>
+</div>
+</div>
+<!-- Custom Progress Bar -->
+<div class="w-full h-2 bg-surface-white/50 rounded-full overflow-hidden cursor-pointer relative group">
+<div class="absolute top-0 left-0 h-full bg-vibrant-aqua w-[18%] transition-all duration-100 ease-linear rounded-full"></div>
+<!-- Hover indicator point -->
+<div class="absolute top-1/2 -mt-1.5 left-[18%] w-3 h-3 bg-surface-white rounded-full shadow opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+<!-- Secondary Controls -->
+<div class="hidden md:flex items-center gap-3 border-l border-outline-variant/30 pl-8">
+<button aria-label="Volume" class="text-primary hover:text-vibrant-aqua transition-colors">
+<span class="material-symbols-outlined">volume_up</span>
+</button>
+<button aria-label="More Options" class="text-primary hover:text-vibrant-aqua transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Grid -->
+<section class="max-w-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Editorial Content & Highlights (8 cols) -->
+<div class="col-span-12 lg:col-span-8 flex flex-col gap-xl">
+<!-- Overview Article -->
+<article class="bg-surface-white rounded-xl p-8 border border-surface-variant shadow-[0px_2px_10px_rgba(0,45,64,0.02)]">
+<header class="mb-6">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">The Current Highlight</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                                As you stand before the mirrored surface of the Kyōko-chi (Mirror Pond), the audio guide delves into the architectural marvel of the top two floors, entirely covered in pure gold leaf.
+                            </p>
+</header>
+<div class="prose max-w-none text-on-surface font-body-md text-body-md space-y-4">
+<p>
+                                Originally built as a retirement villa for the shogun Ashikaga Yoshimitsu in the late 14th century, the structure was converted into a Zen temple by his son, according to his wishes. The pavilion's design brilliantly harmonizes three distinct architectural styles: Shinden, Samurai, and Zen, reflecting the turbulent yet culturally rich Muromachi period.
+                            </p>
+<!-- Inline High-Quality Contextual Image -->
+<div class="my-6 rounded-lg overflow-hidden h-[300px] w-full bg-surface-container relative">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A detailed, close-up photograph of traditional Japanese Zen garden elements adjacent to the Golden Pavilion. The image features meticulously raked white gravel and carefully placed, moss-covered stones under dappled sunlight. The lighting is crisp and modern, emphasizing texture and tranquility, aligning with a premium corporate travel brand's clean, light-mode aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCo4JgAmdnH_ByRzDxDcdY_LAq_EK7yideuTIE-cmnKUWtoURgNJo5NdpZnptxRIUazfWi8w8WSFEYFM3CrnuPYV5xPAQKyHKfEX-90vAzFw3lhWURkEkj0H-n6NOBHZ4jdvG4HioKzMnJWMagSOoMxM_2pTI6KHq_6gFeUfI7g-XEVKXMYJvqEWMAoj9oKTnrUNksUNnTIBgcr-75rGDVQYK_N2knTpbxJsJQJ3P_Jo73GNMG_XdOGyXkhK9-VJpEGaWZydaK1BCE')">
+</div>
+</div>
+<p>
+                                Notice the bronze phoenix ornament standing proud on the roof. It survived the tragic arson of 1950, a story deeply explored in Chapter 3 of this series. The surrounding strolling garden, designed to integrate seamlessly with the natural landscape, represents the Buddhist concept of the Pure Land.
+                            </p>
+</div>
+</article>
+<!-- Narrator Info Profile -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-surface-variant flex flex-col sm:flex-row items-center sm:items-start gap-6">
+<div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-surface-white shadow-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="A professional, high-quality headshot of an Asian male in his late 40s with a warm, intellectual expression. He is wearing a smart-casual dark navy blazer over a crisp white shirt. The background is slightly blurred and bright, suggesting a modern studio or bright office space, fitting the premium, trustworthy aesthetic of a corporate travel application." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGaARGKCD3Ir0YH5uqW-UUQ8HP2z6sqK5ZNbdsD-2YPocVyTP8k4-V92jKyVkpnZMJA1Y_dpKV8U99PY74r7IfjYqMDP6LvRgVovVoMY3g77uXur56ICdE7RsL_gYA1tco_eZAjUrbM9RrFoJdn4O55zCBgnllUXuPeT1jMNtij_3zJOA70op9iYTJ6cshkmB84unj-pcnzUUwLZ-B5ojILhi-o9uEwJSH0K1R8gR1Q7Pl1_8N_qCFrWgkn_UaHwptGIrIgfFE6Wk')">
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">About the Narrator</h3>
+<h4 class="font-label-bold text-label-bold text-vibrant-aqua uppercase tracking-wide mb-3">Kenji Sato</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                                Kenji Sato is a renowned historian and Kyoto native, specializing in the Muromachi period. With over two decades of experience as a lead curator at the Kyoto National Museum, his voice brings unparalleled depth and authenticity to the stories hidden within these ancient walls.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Chapter List (4 cols, Sticky) -->
+<aside class="col-span-12 lg:col-span-4 sticky top-28">
+<div class="bg-surface-white rounded-xl border border-surface-variant shadow-[0px_4px_20px_rgba(0,45,64,0.04)] overflow-hidden flex flex-col h-[500px]">
+<div class="p-6 border-b border-surface-variant bg-surface-bright">
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-vibrant-aqua">format_list_numbered</span>
+                                Audio Chapters
+                            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">5 Tracks • 45m Total</p>
+</div>
+<!-- Scrollable List -->
+<ul class="flex-grow overflow-y-auto custom-scrollbar p-2">
+<!-- Active Track -->
+<li>
+<button class="w-full text-left p-4 rounded-lg bg-surface-container-high border-l-4 border-vibrant-aqua flex items-start gap-4 transition-colors group">
+<div class="mt-1 flex-shrink-0 text-vibrant-aqua">
+<span class="material-symbols-outlined fill-icon animate-pulse">volume_up</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-label-bold text-label-bold text-primary mb-1">1. The Gleaming Reflection</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Origins of Kinkaku-ji &amp; Ashikaga Yoshimitsu</p>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant whitespace-nowrap mt-1">12:45</span>
+</button>
+</li>
+<!-- Inactive Track -->
+<li>
+<button class="w-full text-left p-4 rounded-lg hover:bg-surface-container transition-colors flex items-start gap-4 group">
+<div class="mt-1 flex-shrink-0 text-outline group-hover:text-primary transition-colors">
+<span class="font-label-bold">02</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-label-bold text-label-bold text-on-surface group-hover:text-primary transition-colors mb-1">Harmony of Styles</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Shinden, Samurai, and Zen architecture.</p>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant whitespace-nowrap mt-1">08:30</span>
+</button>
+</li>
+<!-- Inactive Track -->
+<li>
+<button class="w-full text-left p-4 rounded-lg hover:bg-surface-container transition-colors flex items-start gap-4 group">
+<div class="mt-1 flex-shrink-0 text-outline group-hover:text-primary transition-colors">
+<span class="font-label-bold">03</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-label-bold text-label-bold text-on-surface group-hover:text-primary transition-colors mb-1">The Fire of 1950</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Tragedy and meticulous reconstruction.</p>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant whitespace-nowrap mt-1">10:15</span>
+</button>
+</li>
+<!-- Inactive Track -->
+<li>
+<button class="w-full text-left p-4 rounded-lg hover:bg-surface-container transition-colors flex items-start gap-4 group">
+<div class="mt-1 flex-shrink-0 text-outline group-hover:text-primary transition-colors">
+<span class="font-label-bold">04</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-label-bold text-label-bold text-on-surface group-hover:text-primary transition-colors mb-1">The Pure Land Garden</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Strolling through the Muromachi landscape.</p>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant whitespace-nowrap mt-1">09:20</span>
+</button>
+</li>
+<!-- Inactive Track -->
+<li>
+<button class="w-full text-left p-4 rounded-lg hover:bg-surface-container transition-colors flex items-start gap-4 group">
+<div class="mt-1 flex-shrink-0 text-outline group-hover:text-primary transition-colors">
+<span class="font-label-bold">05</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-label-bold text-label-bold text-on-surface group-hover:text-primary transition-colors mb-1">Sekkatei Teahouse</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">A quiet conclusion in the evening light.</p>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant whitespace-nowrap mt-1">05:10</span>
+</button>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</section>
+</main>
+<!-- Shared Component: Footer -->
+<footer class="bg-primary w-full">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-xl max-w-max-width mx-auto">
+<!-- Brand Logo -->
+<div class="font-headline-sm text-headline-sm text-on-primary mb-4 md:mb-0">
+                Voyage Elite
+            </div>
+<!-- Copyright -->
+<div class="font-body-sm text-body-sm text-on-primary mb-4 md:mb-0 opacity-80">
+                © 2024 Voyage Elite. All rights reserved.
+            </div>
+<!-- Links -->
+<div class="flex gap-6">
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-tropical-teal transition-colors opacity-80 hover:opacity-100" href="#">FAQ</a>
+</div>
+</div>
+</footer>
+<!-- Lightweight interaction script for visual feedback -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const playBtn = document.getElementById('main-play-btn');
+            const playIcon = document.getElementById('play-icon');
+            let isPlaying = false;
+
+            playBtn.addEventListener('click', () => {
+                isPlaying = !isPlaying;
+                if (isPlaying) {
+                    playIcon.textContent = 'pause';
+                    playBtn.classList.remove('bg-vibrant-aqua');
+                    playBtn.classList.add('bg-deep-navy');
+                } else {
+                    playIcon.textContent = 'play_arrow';
+                    playBtn.classList.remove('bg-deep-navy');
+                    playBtn.classList.add('bg-vibrant-aqua');
+                }
+            });
+        });
+    </script>
+</body></html>
