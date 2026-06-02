@@ -39,7 +39,7 @@ export default function AITripPlanner({ onConfirmPlan }) {
     setResult(null);
     setFeedbackAnalysis(null);
     try {
-      const response = await fetch('http://localhost:5005/api/plan-trip', {
+      const response = await fetch('/api/plan-trip', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

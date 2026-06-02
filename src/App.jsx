@@ -359,7 +359,7 @@ export default function App() {
     setIsConciergeLoading(true);
     setOnboardingStep(4);
     try {
-      const response = await fetch('http://localhost:5005/api/destinations/recommend', {
+      const response = await fetch('/api/destinations/recommend', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -421,7 +421,7 @@ export default function App() {
       const budgetRange = getDailyBudgetRange(aiBudget, aiDays);
       const resolvedRealm = aiRealm === 'all' ? resolveRealmFromDestination(aiDestination) : aiRealm;
 
-      const response = await fetch('http://localhost:5005/api/route/ai-plan', {
+      const response = await fetch('/api/route/ai-plan', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -657,7 +657,7 @@ export default function App() {
       if (currentPage !== 'home') return;
       setIsMlLoading(true);
       try {
-        const res = await fetch('http://localhost:5005/api/recommend', {
+        const res = await fetch('/api/recommend', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ acoustics: sensory.acoustics, energy: sensory.energy })
