@@ -14,7 +14,7 @@ import staticDestinations from '../destinations.json';
 
 export default function App() {
   // A. Page Routing State
-  const [currentPage, setCurrentPage] = useState('ai-planner'); // 'home', 'search', 'detail', 'audio', 'bookings', 'about', 'ai-planner'
+  const [currentPage, setCurrentPage] = useState('home'); // 'home', 'search', 'detail', 'audio', 'bookings', 'about', 'ai-planner'
   const [destinations, setDestinations] = useState(staticDestinations);
   const [selectedDest, setSelectedDest] = useState(staticDestinations[0] || null);
 
